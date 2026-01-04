@@ -1,0 +1,40 @@
+# Pythonバイトコード (実行時に自動生成され、環境に依存する場合があるため)
+__pycache__/
+*.py[cod]
+*$py.class
+
+# 仮想環境 (サイズが大きく、requirements.txtから再現可能なため)
+venv/
+.venv/
+env/
+bin/
+lib/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# 環境変数 (機密情報が含まれる可能性があるため)
+.env
+.env.shared
+
+# エディタ設定 (開発者個人の好みに依存するため)
+.vscode/
+.idea/
+
+# OS特有のファイル (開発に不要なため)
+.DS_Store
+Thumbs.db
+
+# ログファイル (デバッグ用であり、共有不要なため)
+*.log
