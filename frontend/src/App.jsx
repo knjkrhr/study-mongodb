@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react'
 import './App.css'
+import DataViewer from "./components/DataViewer.jsx";
 
 function App() {
   const [data, setData] = useState(null)
@@ -24,8 +25,10 @@ function App() {
       {loading ? (
         <p>Loading...</p>
       ) : (
-        <pre>{JSON.stringify(data, null, 2)}</pre>
+          // <pre>{JSON.stringify(data, null, 2)}</pre>
+          <DataViewer v={data} />
       )}
+
     </div>
   )
 }
